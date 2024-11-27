@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewGaming - Servidor SA:MP</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/logo.ico" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        #updateText {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+            font-family: 'Poppins', sans-serif;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        #updateText h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #00ff88;
+        }
+
+        #updateText ul {
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        #updateText li {
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="images/logo.png" alt="Logo" style="width: 100px; height: auto;" />
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Inicio</a>
+            <a href="custom.html">Servidor DM</a>
+            <a href="https://discord.gg/tuservidor" target="_blank">Discord</a>
+            <a href="#" class="donate-btn">Donar</a>
+            <a href="tienda.html">Tienda</a>
+        </div>
+        <div class="nav-toggle">☰</div>
+    </nav>
+    
+    <div class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo" style="width: 100px; height: auto;" />
+        </div>
+        <h1>NewGaming</h1>
+        <p>El mejor servidor Roleplay GTA San Andreas Multiplayer, con sistemas únicos y actualizaciones constantes.</p>
+        <a href="samp://130.51.94.27:7777" class="connect-button">CONECTAR AL SERVIDOR</a>
+    </div>
+    
+    <div class="container">
+        <div class="server-info">
+            <h2>Información del Servidor</h2>
+            <p>Nombre: <span id="serverName">Verificando...</span></p>
+            <p>IP: 130.51.94.27:7777</p>
+            <p>Estado: <span id="serverStatus">Verificando...</span></p>
+            <p>Jugadores: <span id="playerCount">-</span></p>
+        </div>
+    </div>
+    
+    <div id="updateText" class="server-info">
+        <h2>Actualización v2.2 ✅</h2>
+        <ul>
+            <li>Se agregó nuevo mapeo para laboratorios.</li>
+            <li>Se mejoró el sistema de desarmadora en laboratorios.</li>
+            <li>Se mejoró el diseño de /ranking.</li>
+            <li>Se agregó nuevo mercado oculto en San Fierro.</li>
+            <li>Se agregaron cajas de armas (se venden en el nuevo mercado en San Fierro).</li>
+            <li>Se agregó TextDraw al cumplir una misión.</li>
+            <li>Se agregó la opción de escapar de prisión con llave federal (se la compra en mercado oculto en San Fierro).</li>
+            <li>Se agregó nuevo TextDraw de comando Incorrecto :No:</li>
+            <li>Se agregó la opción de comprar neones en talleres mecánicos por 2 coins 💰.</li>
+            <li>Se mejoró la paga de minero ⛏️ bastante.</li>
+            <li>Ahora el accesorio de /oro se da automáticamente a tu cuenta.</li>
+            <li>Se reinició el /oro 🔄 para todos los usuarios.</li>
+            <li>Se agregó /mercados para ver todos los mercados disponibles (se eliminó de Gps).</li>
+            <li>Se agregó /empleados (ver lista de empleados de laboratorio).</li>
+            <li>Se hicieron cambios en el (/caja) ahora es por números (1) para sacar objetos (2) para sacar armas /caja 1 y/o /caja 2 📦.</li>
+            <li>Se removieron comandos para ver tops y se agregó 1 solo con diálogo (/top)) 🏅.</li>
+            <li>Ahora si un laboratorio tiene 0 productos no le restan pero tampoco da el dinero 💵 por hora.</li>
+            <li>Se hicieron cambios al terminar tráfico en laboratorios, tanto en recompensas como mensajes.</li>
+            <li>Se agregó comando para crear clima con nieve (cmd administrativo).</li>
+        </ul>
+    </div>
+    
+    <script src="scripts/server-status.js"></script>
+</body>
+</html>
