@@ -6,20 +6,58 @@
     <title>NewGaming Custom - Servidor SA:MP</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="images/logo.ico" type="image/png">
+   
+    <style>
+        /* ... estilos existentes ... */
+        .nav-links {
+            display: none; /* Ocultar por defecto en móviles */
+        }
+
+        .nav-toggle {
+            display: block; /* Mostrar el botón de toggle en móviles */
+            cursor: pointer;
+        }
+
+        @media (min-width: 768px) {
+            .nav-links {
+                display: flex; /* Mostrar enlaces en pantallas más grandes */
+            }
+            .nav-toggle {
+                display: none; /* Ocultar el botón de toggle en pantallas más grandes */
+            }
+        }
+    </style>
+
+<body>
+    
+    
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-logo">
             <img src="images/logo.png" alt="Logo" style="width: 100px; height: auto;" />
         </div>
+        <div class="nav-toggle">☰</div>
         <div class="nav-links">
             <a href="index.html" class="active">Inicio</a>
             <a href="custom.html">Servidor DM</a>
             <a href="https://discord.gg/c8gjZbcqda" target="_blank">Discord</a>
+            <a href="#" class="donate-btn">Donar</a>
             <a href="tienda.html">Tienda</a>
         </div>
-        <div class="nav-toggle">☰</div>
     </nav>
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
     
     <div class="header">
         <div class="logo">
