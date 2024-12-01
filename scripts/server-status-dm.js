@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
             .then(response => response.json())
             .then(data => {
                 const serverName = data.core.hn; // 'hn' es el nombre del servidor
-                const isOnline = data.core.pa; // 'pa' indica si el servidor está activo
+                const isOnline = data.core.active; // 'pa' indica si el servidor está activo
                 const playerCount = data.core.pc; // 'pc' es el número de jugadores actuales
 
                 serverNameElement.textContent = serverName;
